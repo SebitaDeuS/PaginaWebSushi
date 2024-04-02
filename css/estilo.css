@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Estilos para el navbar*/
+.navbar {
+    position: fixed;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.abajo {
+    background-color: #fff;
+    padding: 15px 40px;
+    transition: all 0.5s ease;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+.navbar .nav-links ul {
+    display: flex;
+    font-size: 20px;
+
+}
+
+.navbar .nav-links ul li {
+    margin: 0 30px;
+
+}
+
+.navbar .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.navbar .nav-links ul li a:hover {
+    color: #ed3c57;
+
+}
+
+.navbar .nav-links ul li.active a {
+    color: #ed3c57;
+    font-weight: 600;
+
+}
+
+nav.abajo .logo,
+nav.abajo .nav-links ul li a {
+    color: black;
+}
+
+#TituloCarta {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+#tica{
+    font-size: 100px;
+    
+
+}
+#subca{
+    font-size: 30px;
+    
+}
+.informe_cartas{
+    margin-top: 100px;
+}
