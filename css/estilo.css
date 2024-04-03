@@ -118,6 +118,16 @@ padding-right: 80px;
 .card-body{
     background-color: rgba(0, 0, 0, 0.481);
 }
+
+.detalle{
+    padding-top: 300px;
+    padding-left: 500px ;
+}
+.fondo{
+    background-color: black;
+}
+
+
 @media screen and (max-width : 900px) {
 
     /* Estilos para el navbar para celular*/
