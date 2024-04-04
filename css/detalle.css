@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -24,11 +31,18 @@ body {
 .navbar .logo {
     font-size: 2em;
     font-weight: bold;
-    color: #fff;
+    color: #020202;
     text-decoration: none;
 }
 
-
+.navbar .menu-hamburgesa {
+    position: absolute;
+    right: 50px;
+    width: 35px;
+    display: none;
+    cursor: pointer;
+    
+}
 
 
 .navbar .nav-links ul {
@@ -43,8 +57,9 @@ body {
 }
 
 .navbar .nav-links ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
+
 
 }
 
@@ -112,10 +127,18 @@ nav.abajo .nav-links ul li a {
     border-radius: 10px;
 }
 
-.btnes{
+.btnes {
     padding-left: 100px;
     margin-left: 30px;
+    display: flex;
+
+}
+.btnes a{
     text-decoration: none;
+    font-size: 20px;
+    background-color: grey;
+    border-radius: 10px ;
+    margin: 10px;
 }
 
 
