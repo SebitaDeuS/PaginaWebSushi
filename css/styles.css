@@ -186,7 +186,10 @@ nav.abajo .nav-links ul li a{
 
 /* Estilos carrito de compras*/
 .titulo{
-    font-size: ;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 50px;
 }
 
 .contenedor-todo{
@@ -195,9 +198,8 @@ nav.abajo .nav-links ul li a{
 }
 
 .contenedor-carrito{
-    width: 1200px;
+    width: 1600px;
     height: 98vh;
-    background-color: black;
     border-radius: 10px;
     margin-right: 7px;
 
