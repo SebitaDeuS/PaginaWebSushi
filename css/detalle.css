@@ -1,16 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    
 }
 
-/* Estilos para el navbar*/
 .navbar {
     position: fixed;
     padding: 30px;
@@ -35,14 +28,7 @@ body {
     text-decoration: none;
 }
 
-.navbar .menu-hamburgesa {
-    position: absolute;
-    right: 50px;
-    width: 35px;
-    display: none;
-    cursor: pointer;
-    
-}
+
 
 
 .navbar .nav-links ul {
@@ -78,77 +64,60 @@ nav.abajo .nav-links ul li a {
     color: black;
 }
 
-#TituloCarta {
+#informacion{
+    background-color:white;
+    width: 100wv;
+}
 
+#informacion .contenedor {
+    display: flex;
+    padding: 100px;
+    max-width: 1400px;
+    padding-top: 200px;
+}
+
+.texto {
+    padding: 40px 50px;
+    color: black;
+    text-align: initial;
+    font-size: 1.5rem;
+}
+
+.texto .titulo{
+    padding-bottom: 35px;
+    font-size: 50px;
+}
+
+
+#informacion {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 50vh;
-    width: 100vw;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
-        url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
-}
-#tica{
-    font-size: 70px;
-    
-
-}
-#subca{
-    font-size: 28px;
-    
-}
-.informe_cartas{
-    margin-top: 100px;
-}
-#body_login{
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.login{
-padding: 200px;
-padding-right: 80px;
-}
-.card-body{
-    background-color: rgba(0, 0, 0, 0.481);
 }
 
-.detalle{
-    padding-top: 300px;
-    padding-left: 500px ;
-}
-.contenedor-padre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 180px;
 
-}
-.fondo{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.667);
-    width: 1000px;
+
+#informacion .contenedor .img-container {
+    background-image: url(../img/cryspipollo.jpg);
+    background-size: cover;
+    background-position: center center;
     height: 400px;
-    
-}   
-.carusel{
-    display: flex;
-    justify-content: center ;
-
-
-}
-.texto{
+    width: 700px;
+    padding: 0 150px;
     border-radius: 10px;
-    background-color: #fff;
-    width: 200px;
-    height: 200px;
 }
+
+.btnes{
+    padding-left: 100px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
 
 
 @media screen and (max-width : 900px) {
@@ -236,4 +205,39 @@ padding-right: 80px;
 
     .abajo .menu-hamburgesa{
         filter: none;
-    }       
+    }
+
+    #informacion .contenedor {
+        padding-top: 250px;
+        padding: 240px 0;
+    }
+
+    .texto .titulo{
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    
+    .texto {
+        padding: 40px 50px;
+        color: black;
+        text-align: initial;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+    
+    #informacion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    #informacion .contenedor .img-container {
+        display: none;
+    }
+}
