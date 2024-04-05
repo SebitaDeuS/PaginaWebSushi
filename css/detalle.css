@@ -19,7 +19,6 @@ body {
     align-items: center;
     width: 100%;
     z-index: 12;
-
 }
 
 .abajo {
@@ -74,6 +73,7 @@ body {
 
 }
 
+
 nav.abajo .logo,
 nav.abajo .nav-links ul li a {
     color: black;
@@ -103,16 +103,22 @@ nav.abajo .nav-links ul li a {
     font-size: 50px;
 }
 
-
+.SaltoCuadro{
+ 
+    padding-top: 70px;
+}
 #informacion {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    border-radius: 20px;
+    background-color: rgba(32, 32, 32, 0.695);
+    width: 1200px;
+    height: 580px;
+    margin:   0 auto ;
+    padding-bottom: 100px;
+    
 }
 
 
@@ -123,8 +129,9 @@ nav.abajo .nav-links ul li a {
     background-position: center center;
     height: 400px;
     width: 700px;
-    padding: 0 150px;
+    padding: 150px;
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 .btnes {

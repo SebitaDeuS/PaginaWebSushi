@@ -116,7 +116,7 @@ padding: 200px;
 padding-right: 80px;
 }
 .card-body{
-    background-color: rgba(0, 0, 0, 0.481);
+    background-color: grey;
 }
 
 .detalle{
@@ -148,6 +148,20 @@ padding-right: 80px;
     background-color: #fff;
     width: 200px;
     height: 200px;
+}
+.text-end{
+    padding-left: 35px;
+    margin-left: 15px;
+    display: flex;
+}
+.text-end a{
+    text-decoration: none;
+    
+    border-radius: 10px ;
+    margin-right: 10px;
+    color: #fff;
+    background-color: rgba(36, 35, 35, 0.638);
+    
 }
 
 
