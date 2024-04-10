@@ -79,12 +79,9 @@ nav.abajo .nav-links ul li a {
     color: black;
 }
 
-#informacion{
-    background-color:white;
-    width: 100wv;
-}
 
-#informacion .contenedor {
+
+#detalle .contenedor {
     display: flex;
     padding: 100px;
     max-width: 1400px;
@@ -103,27 +100,24 @@ nav.abajo .nav-links ul li a {
     font-size: 50px;
 }
 
-.SaltoCuadro{
- 
-    padding-top: 70px;
-}
-#informacion {
+
+#detalle{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center ;
     border-radius: 20px;
     background-color: rgba(32, 32, 32, 0.695);
     width: 1200px;
     height: 580px;
     margin:   0 auto ;
-    padding-bottom: 100px;
-    
+    padding-bottom: 100px;    
 }
 
 
 
-#informacion .contenedor .img-container {
+
+#detalle .contenedor .img-container {
     background-image: url(../img/cryspipollo.jpg);
     background-size: cover;
     background-position: center center;
