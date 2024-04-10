@@ -182,6 +182,38 @@ nav.abajo .nav-links ul li a{
     font-size: 50px;
 }
 
+
+/* Estilos carrito de compras*/
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 50px;
+}
+
+.contenedor-todo{
+    display: flex;
+    padding: 7px;
+}
+
+.contenedor-carrito{
+    width: 1600px;
+    height: 98vh;
+    border-radius: 10px;
+    margin-right: 7px;
+
+}
+
+.contenedor-datos{
+    height: 98vh;
+    width: 300px;
+    background-color: #ed3c57;
+    border-radius: 10px;
+    
+}
+
+
+
 @media screen and (max-width : 900px) {
 
     /* Estilos para el navbar para celular*/
