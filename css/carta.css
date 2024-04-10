@@ -273,5 +273,9 @@ padding-right: 80px;
         justify-content: center;
        
     }
+    .text-end a{
+        
+        font-size: 10px;
+    }
 
 }    
