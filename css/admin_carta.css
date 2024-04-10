@@ -20,17 +20,15 @@ body {
     width: 100%;
     z-index: 12;
 }
-.navbar p{
-    padding-right: 632px;
-    width: 100px;
-    color: white    ;
-}
+
 
 .abajo {
     background-color: #fff;
     padding: 15px 40px;
     transition: all 0.5s ease;
 }
+
+
 
 .navbar .logo {
     font-size: 2em;
@@ -182,6 +180,18 @@ padding-right: 80px;
 }
 .card-img-top{
     border-radius: 20px;
+}
+.AgreProduc{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    margin: 0 0 40px 40px;
+}
+.AgreProduc a{
+    color: black;
 }
 
 @media screen and (max-width : 900px) {

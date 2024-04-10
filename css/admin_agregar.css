@@ -234,46 +234,4 @@ nav.abajo .nav-links ul li a {
     .abajo .menu-hamburgesa{
         filter: none;
     }
-
-    #informacion .contenedor {
-        padding-top: 250px;
-        padding: 240px 0;
-    }
-
-    .texto .titulo{
-        padding-bottom: 30px;
-        text-align: center;
-        font-size: 30px;
-        
-    }
-    
-    .texto {
-        padding: 40px 50px;
-        color: black;
-        text-align: initial;
-        justify-content: center;
-        font-size: 1.2rem;
-    }
-    .SaltoCuadro{
-        padding-top: 150px;
-    }
-    #informacion {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        width: 400px;
-        height: 500px;
-      
-    }
-    
-    #informacion .contenedor .img-container {
-        display: none;
-        padding-top: 200px;
-    }
-
-
 }

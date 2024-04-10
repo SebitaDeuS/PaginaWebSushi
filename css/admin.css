@@ -10,6 +10,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 /* Estilos para el navbar*/
 .navbar {
     position: fixed;
@@ -21,11 +23,7 @@ body {
     z-index: 12;
 
 }
-.navbar p{
-    width: 100px;
-    padding-right: 649px;
-    color: white    ;
-}
+
 
 .abajo {
     background-color: #fff;
@@ -87,7 +85,7 @@ nav.abajo .nav-links ul li a {
 
 .TitAdmin{
     background-color: black;
-    height: 700px;
+    height: 90%;
     padding-top: 150px;
     border-end-end-radius: 30px;
     border-bottom-left-radius:  30px;
