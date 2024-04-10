@@ -113,10 +113,7 @@ nav.abajo .nav-links ul li a {
 #body_login{
     background-color: rgba(0, 0, 0, 0.7);
 }
-.login{
-padding: 200px;
-padding-right: 80px;
-}
+
 .card-body{
     background-color: white;
     color: black;

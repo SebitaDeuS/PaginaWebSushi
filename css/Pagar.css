@@ -8,12 +8,12 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    overflow-y: hidden;
-    
+    background-color: black;
 }
 
 
 
+/* Estilos para el navbar*/
 .navbar {
     position: fixed;
     padding: 30px;
@@ -22,7 +22,9 @@ body {
     align-items: center;
     width: 100%;
     z-index: 12;
+
 }
+
 
 .abajo {
     background-color: #fff;
@@ -33,9 +35,8 @@ body {
 .navbar .logo {
     font-size: 2em;
     font-weight: bold;
-    color: #020202;
+    color: #fff;
     text-decoration: none;
-    font-size: 25px;
 }
 
 .navbar .menu-hamburgesa {
@@ -60,9 +61,8 @@ body {
 }
 
 .navbar .nav-links ul li a {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
-
 
 }
 
@@ -77,76 +77,19 @@ body {
 
 }
 
-
 nav.abajo .logo,
 nav.abajo .nav-links ul li a {
     color: black;
 }
 
+.Container{
 
-
-#detalle .contenedor {
-    display: flex;
-    padding: 100px;
-    max-width: 1400px;
-    padding-top: 200px;
+    padding-top: 100px;
+    text-align: center;
 }
-
-.texto {
-    padding: 40px 50px;
-    color: black;
-    text-align: initial;
-    font-size: 1.5rem;
+.title{
+   color: white;
 }
-
-.texto .titulo{
-    padding-bottom: 35px;
-    font-size: 50px;
-}
-
-
-#detalle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center ;
-    border-radius: 20px;
-    width: 1200px;
-    height: 580px;
-    margin:   0 auto ;
-    padding-bottom: 100px;  
-    padding-top: 200px;  
-}
-
-
-
-
-#detalle .contenedor .img-container {
-    background-image: url(../img/cryspipollo.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 400px;
-    width: 700px;
-    padding: 150px;
-    border-radius: 10px;
-    margin-top: 50px;
-}
-
-.btnes {
-    padding-left: 100px;
-    margin-left: 30px;
-    display: flex;
-
-}
-.btnes a{
-    text-decoration: none;
-    font-size: 20px;
-    background-color: grey;
-    border-radius: 10px ;
-    margin: 10px;
-}
-
-
 
 @media screen and (max-width : 900px) {
 
@@ -154,7 +97,6 @@ nav.abajo .nav-links ul li a {
     .navbar{
         padding: 0;
         z-index: 10;
-        
         
     }
     nav.abajo .menu-hamburgesa,
@@ -167,6 +109,7 @@ nav.abajo .nav-links ul li a {
         position: absolute;
         top: 50px;
         left: 20px;
+        font-size: 25px;
 
     }
 
@@ -205,34 +148,5 @@ nav.abajo .nav-links ul li a {
     .navbar .nav-links ul li{
         margin: 25px 0;
         font-size: 1.5em;
-    }
-
-    .btn-contacto {
-        font-size: 1rem;
-        border: 1px solid #fff;
-        padding: 20px 35px;
-        text-decoration: none;
-        color: #fff;
-        border-radius: 5px;
-    }
-
-    .titulo-principal {
-
-        font-size: 2.5rem;
-        color: #fff;
-        padding-bottom: 80px;
-        font-weight: bold;
-    }
-    
-    
-
-    .abajo{
-        background-color: #fff;
-        padding: 30px 40px;
-        transition: all 0.5s ease;
-    }
-
-    .abajo .menu-hamburgesa{
-        filter: none;
     }
 }

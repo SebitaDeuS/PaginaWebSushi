@@ -188,7 +188,7 @@ padding-right: 80px;
     background-color: white;
     border-radius: 20px;
     width: 300px;
-    margin: 0 0 40px 40px;
+    margin: 0 0 40px 0px;
 }
 .AgreProduc a{
     color: black;
@@ -211,7 +211,8 @@ padding-right: 80px;
     .navbar .logo{
         position: absolute;
         top: 50px;
-        left: 50px;
+        left: 20px;
+        font-size: 25px;
 
     }
 
