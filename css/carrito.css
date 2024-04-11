@@ -120,7 +120,7 @@ nav.abajo .nav-links ul li a{
 .delivery{
     background-color: #fff;
     text-align: center;
-    width: 130px;
+    width: 120px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
@@ -129,10 +129,11 @@ nav.abajo .nav-links ul li a{
 .retirar{
     background-color: #fff;
     text-align: center;
-    width: 130px;
+    width: 120px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    
     
 }
 
@@ -152,14 +153,70 @@ nav.abajo .nav-links ul li a{
     color: black;
 }
 
+.botones a:hover{
+    background-color: #aeadad;
+    transition: all 0.5s ease;
+}
+
 .total-compra{
     text-align: right;
     padding: 40px;
 }
 
+.contenedor-datos-delivery{
+    margin: 20px 0 0 0;
+    padding: 5px;
+    opacity: 0; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease, opacity 1s ease;
+}
+
+.contenedor-delivery-active{
+    opacity: 1; 
+    max-height: 500px; 
+
+}
+
+/* FORMULARIO DELIVERY*/
+
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
 
 
+.agregarFormularioDely{
 
+}
 
 
 
@@ -247,5 +304,23 @@ nav.abajo .nav-links ul li a{
         padding: 40px;
     }
     
+
+    .contenedor-datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .opciones-retiro {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .delivery{
+        margin-bottom: 20px;
+    }
 
 }
