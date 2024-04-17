@@ -146,6 +146,69 @@ nav.abajo .nav-links ul li a {
     margin: 10px;
 }
 
+.container_form{
+    height: 50%;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    border: 1px solid red;
+}
+.cuerpo_form{
+    margin-top: 100px;
+    margin-left: 350px;
+    height: 600px;
+    width: 800px;
+    background-color: #000000;
+    border-radius: 10px;
+    border: 1px solid red;
+
+}
+.cuerpo_form h1{
+    font-size: 30px;
+    width: 400px;
+    color: white;
+    padding-left: 50px;
+    padding-top: 30px;
+    border-bottom: 5px  solid white;
+    display: flex;
+    
+}
+
+.Datos{
+    border: 1px solid rgb(255, 0, 123);
+    background-color: gray;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    height: 500px;
+    width: 390px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: auto;
+    
+}
+ .Portada{
+    
+    border: 1px solid blue;
+    width: 200px;
+    height: 150px;
+    order: 2;  
+ }
+ .imagen{
+    height: auto;
+    width: 150px;
+ }
+
+.Datos input{
+background-color: transparent;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+
+border-bottom:1px solid white;
+height: 30px;
+
+}
 
 
 @media screen and (max-width : 900px) {
