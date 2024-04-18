@@ -39,13 +39,13 @@
             type="button"
             class="btn btn-light my-5"
             data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
+            data-bs-target="#staticBackdrop1"
           >+ Agregar producto</button>
 
           <!-- Modal -->
           <div
             class="modal fade"
-            id="staticBackdrop"
+            id="staticBackdrop1"
             data-bs-backdrop="static"
             data-bs-keyboard="false"
             tabindex="-1"
@@ -116,7 +116,7 @@
                                 </p>
                                 <div class="text-end">
                                     <a href="detalle.html" class="btn btn">Detallle</a>
-                                    <a href="#" class="btn">Editar</a>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#edicion">Editar</button>
                                 </div>
                             </div>
                         </div>
@@ -222,6 +222,60 @@
                 </div>
             </div>
 
+            <!-- Modal EDICION DE PRODUCTO-->
+          <div
+          class="modal fade"
+          id="edicion"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Editar producto
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form action="#">
+                    <div class="form-group">
+                      <label for="direccion">Nombre producto</label>
+                      <input type="text" id="direccion" name="direccion" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="referencia">Descripcion</label>
+                      <textarea id="referencia" name="referencia" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="direccion">Precio</label>
+                      <input type="text" id="direccion" name="direccion" required />
+                    </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Guardar
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--FIN MODAL-->
 
     </section>
 
