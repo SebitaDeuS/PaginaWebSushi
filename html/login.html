@@ -23,27 +23,36 @@
         <img src="../img/btn hamburger.png" alt="menu hamburgesa" class="menu-hamburgesa">
     </nav>
 
-    <div class="Fondo_login">
+    <div id="Fondo_login" class="border p-3 shadow">
         <div class="container">
             <div class="Login">
                 <h1>Inicio Sesion</h1>
                 <h1 style="margin-bottom: 60px;">SushiDeuS</h1>
-                <div class="cuerpo_login">
-                    <p>Correo Electronico</p1>
-                    <input type="text" name="Correo " id="Correo">
-                    <p>Contraseña</p>
-                    <input type="text" name="Constraseña" id="Contra">
-                    <div class="btnes">
-                        <a href="Registro.html" class="btn">Registrarse</a>
-                        <a href="admin.html" class="btn">Iniciar Sesion</a>
+                <form action="login.html" method="get" class="was-validated">
+                    <div class="cuerpo_login">
+                        <div class="mb-3">
+                            <label class="form-label" for="correo">Correo Electronico</label>
+                            <input class="form-control" type="txt"  name="correo" id="idcorreo" onblur="validar()" required>
+                            <div class="txt-danger" id="msj"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="">Contraseña</label>
+                            <input class="form-control" type="password"  name="contraseña" id="contraseña" required>
+                        </div>
+                        <div class="mb-3">
+                            <a class="btn btn-success text-light" href="Registro.html">Registro</a>
+                            <input type="submit" value="Iniciar Sesión" class="btn btn-success text-light">
+                        </div>
+
                     </div>
-                </div>
+                </form>
             </div>
 
         </div>
     </div>
     </div>
     </div>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
