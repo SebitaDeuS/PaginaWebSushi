@@ -7,6 +7,7 @@
 
 
 .navbar {
+    position: fixed;
     padding: 21px;
     display: flex;
     justify-content: space-between;
@@ -99,7 +100,6 @@ nav.abajo .nav-links ul li a{
     .navbar  .menu-hamburgesa {
         display: block;
         top: 50px;
-        filter: invert(1); 
         
     }
 
