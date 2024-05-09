@@ -18,6 +18,21 @@ window.addEventListener("scroll", function(){
 })
 
 
+$(document).ready(function () {
+    const apiUrl = 'https://api.waifu.im/search';
+    $.getJSON(apiUrl, function () {
+       console.log("Esperando datos...");
+    }
+    ).fail(function () {
+        console.log("Watioooo!!!");
+
+    }).done(function (data) {
+        
+
+    });
+});
+
+
 
 //Validar rut
 
@@ -102,11 +117,12 @@ function validarFormulario() {
     } else {
         document.getElementById('mensajePsw1').innerText = '';
     }
-    if(email==''){
-        document.getElementById('mensajemail').innerText='Porfavor ingrese su email'
-        return false;
-    }else{
-        document.getElementById('mensajemail').innerText=''
+
+    let submitBtn = document.getElementById('submitBtn');
+    if (rut !== '' && nombre !== '' && apellido !== '' && email !== '' && psw !== '' && psw1 !== '' && psw === psw1) {
+        submitBtn.disabled = false;
+    } else {
+        submitBtn.disabled = true;
     }
 }
    
