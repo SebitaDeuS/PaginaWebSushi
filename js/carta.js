@@ -14,3 +14,19 @@ window.addEventListener("scroll", function(){
 })
 
 
+$(document).ready(function () {
+    const apiUrl = 'https://api.waifu.im/search';
+    $.getJSON(apiUrl, function () {
+       console.log("Esperando datos...");
+    }
+    ).fail(function () {
+        console.log("Watioooo!!!");
+
+    }).done(function (data) {
+        
+        let imagen = data.images[0].url
+        
+        $("#foto-waifu").attr("src", imagen)
+        
+    });
+});

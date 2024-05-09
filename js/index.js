@@ -18,6 +18,21 @@ window.addEventListener("scroll", function(){
 })
 
 
+$(document).ready(function () {
+    const apiUrl = 'https://api.waifu.im/search';
+    $.getJSON(apiUrl, function () {
+       console.log("Esperando datos...");
+    }
+    ).fail(function () {
+        console.log("Watioooo!!!");
+
+    }).done(function (data) {
+        
+
+    });
+});
+
+
 
 //Validar rut
 
@@ -96,6 +111,13 @@ function validarFormulario() {
         document.getElementById('mensajePsw1').innerText = 'Las contraseñas no coinciden.';
     } else {
         document.getElementById('mensajePsw1').innerText = '';
+    }
+
+    let submitBtn = document.getElementById('submitBtn');
+    if (rut !== '' && nombre !== '' && apellido !== '' && email !== '' && psw !== '' && psw1 !== '' && psw === psw1) {
+        submitBtn.disabled = false;
+    } else {
+        submitBtn.disabled = true;
     }
 }
 
