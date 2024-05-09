@@ -1,10 +1,25 @@
 function validar() {
-    let texto = document.getElementById("idcorreo").value;
-    if (texto == ""){
-        document.getElementById("msj").className = "text-danger"
-    document.getElementById("msj").innerHTML = "Ingresa el Correo";
+    let correo = document.getElementById("idcorreo").value;
+    let pass = document.getElementById("contraseña").value;
+    if (correo == ""){
+        document.getElementById("msjCorreo").className = "text-danger"
+        document.getElementById("msjCorreo").innerHTML = "Ingresa su Correo";
     }else{
-        document.getElementById("msj").className="text-success"
-        document.getElementById("msj").innerHTML="Es valido";
+        document.getElementById("msjCorreo").innerHTML="";
+    }
+
+    if (pass == ""){
+        document.getElementById("msjClave").className = "text-danger"
+        document.getElementById("msjClave").innerHTML = "Ingresa su contraseña";
+    }else{
+        document.getElementById("msjClave").innerHTML="";
+    }
+    
+
+    let submitBtn = document.getElementById('submitBtn');
+    if (correo !== '' && pass !== '') {
+        submitBtn.disabled = false;
+    } else {
+        submitBtn.disabled = true;
     }
 }

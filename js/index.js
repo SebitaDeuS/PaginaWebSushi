@@ -74,19 +74,18 @@ function validarFormulario() {
 
     if (rut ==='') {
         document.getElementById('mensajeRut').innerText = 'Por favor ingrese su rut.';
-        return false;
+
     } else if(!validarRut(rut)){
         document.getElementById('mensajeRut').innerText = 'El rut ingresado no es valido';
-        return false;
+
     }else {
         document.getElementById('mensajeRut').innerText = '';
     }
-    
+
 
 
     if (nombre === '') {
         document.getElementById('mensajeNombre').innerText = 'Por favor ingrese su nombre.';
-        return false;
     } else {
         document.getElementById('mensajeNombre').innerText = '';
     }
@@ -94,7 +93,6 @@ function validarFormulario() {
 
     if (apellido === '') {
         document.getElementById('mensajeApellido').innerText = 'Por favor ingrese su apellido.';
-        return false;
     } else {
         document.getElementById('mensajeApellido').innerText = '';
     }
@@ -102,7 +100,6 @@ function validarFormulario() {
 
     if (psw === '') {
         document.getElementById('mensajePsw').innerText = 'Por favor ingrese su contraseña.';
-        return false;
     } else {
         document.getElementById('mensajePsw').innerText = '';
     }
@@ -110,10 +107,8 @@ function validarFormulario() {
 
     if (psw1 === '') {
         document.getElementById('mensajePsw1').innerText = 'Por favor confirme su contraseña.';
-        return false;
     } else if (psw !== psw1) {
         document.getElementById('mensajePsw1').innerText = 'Las contraseñas no coinciden.';
-        return false;
     } else {
         document.getElementById('mensajePsw1').innerText = '';
     }
