@@ -149,6 +149,11 @@ padding-right: 80px;
 
 
 }
+
+.img-tabla-producto{
+    width: 90px;
+    height: 60px;
+}
 .texto{
     border-radius: 10px;
     background-color: #fff;
